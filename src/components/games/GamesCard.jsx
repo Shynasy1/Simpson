@@ -4,7 +4,7 @@ function GamesCard({game}){
             <img src={game.imageUrl } alt={game.name} width="200" height="200"/>
             <h3>{game.name}</h3>
             <p>Цена: {game.price} ₸</p>
-            <button>Добавить в корзину</button>
+            <a className="steamUrl" href={game.steamUrl}>Купить</a>
     </div>
     )
 }
